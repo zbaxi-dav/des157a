@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <title>Experiment 1</title>
+
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Open the console log. Right-click on a webpage and select "Inspect" or "Inspect Element". Press on the tab console. You can also use: Ctrl + Shift + J (Windows/Linux) or Cmd + Option + J (macOS)</h2>
+
+    <script>
+        //Write a program that takes a lowercase string and capitalizes the first letter of each word in the string.
+
+        var original = prompt("write a lowercase sentence", "").toLowerCase();
+        var final = "";
+        var uppercase = true;
+        
+        for (var i = 0; i < original.length; i++){
+
+            var current = original[i];
+
+            if (current === " "){
+                final = final + " ";
+            }
+            else{
+                if (uppercase){
+                    final = final + current.toUpperCase();
+                }
+                else{
+                    final = final + current.toLowerCase();
+                }
+                uppercase =!uppercase;
+            }
+        }
+        console.log(final);
+
+    </script>
+</body>
+</html>

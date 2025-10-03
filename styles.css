@@ -1,0 +1,47 @@
+:root {
+  /* main colors */
+  --linen: #f4f1e9;
+  --clay: #ddd4c8;
+  --charcoal: #38342B;
+
+  /* links and descriptions */
+  --olive-bark: #857E48;
+  --sunlit-moss: #A79F61;
+
+  /* tab colors */
+  --sage-dust: #a6a77e;
+  --lichen: #BAB9A4;
+  --willow-fog: #ABB1AA;
+  --terracotta-rose: #B67B5C;
+  --olive-seed: #A99F57;
+  --lavender: #A39EB2;
+}
+
+body {
+    background-color: var(--linen);
+}
+
+
+h1 {
+    color: var(--charcoal);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    color: var(--charcoal);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    color: var(--charcoal);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
