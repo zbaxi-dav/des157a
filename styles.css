@@ -17,6 +17,8 @@
   --lavender: #A39EB2;
 }
 
+
+/* BODY & FONtS */
 body {
     background-color: var(--linen);
 }
@@ -25,7 +27,6 @@ body {
 h1 {
     color: var(--charcoal);
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-size: 2rem;
@@ -34,7 +35,6 @@ h1 {
 h2 {
     color: var(--charcoal);
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 1.3rem;
@@ -43,7 +43,6 @@ h2 {
 h3 {
     color: var(--sage-dust);
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-size: 1.4rem;
@@ -52,7 +51,6 @@ h3 {
 p {
     color: var(--charcoal);
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
     font-size: 1.2rem;
@@ -68,7 +66,112 @@ a:hover{
 
 
 /* Formating Main Stuff */
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
 
 header{
     text-align: center;
+    padding: 1rem;
+}
+
+.logo{
+    height: 7rem;
+    width: auto;
+}
+
+#banner{
+    width: 1100px;
+    height: 250px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    background: var(--olive-seed);
+    border-radius: 2rem;
+}
+
+.banneritem{
+    font-size: 4rem;
+    transition: transform 1.5s ease;
+}
+
+.banneritem.flower:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.banneritem.leaf:hover{
+    animation: fall 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes fall{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-10deg);}
+    50%{transform: rotate(10deg);}
+    75%{transform: rotate(-10deg);}
+    100%{transform: rotate(0deg);}
+}
+
+
+.banneritem.star:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+
+footer{
+    color: var(--olive-bark);
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    font-size: 1rem;
+    padding: 4rem;
+}
+
+
+/* MAIN AND ARTICLES ON HOME PAGE */
+main{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+article{
+    padding: 2rem;
+}
+
+article h2{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--charcoal);
+    text-underline-offset: 0.5rem;
+}
+
+.research{
+    border: 2px dashed var(--sage-dust);
+    border-radius: 2rem;
+    background-color: var(--clay);
+}
+
+.madlib{
+    border: 2px dashed var(--willow-fog);
+    border-radius: 2rem;
+    background-color: var(--clay);
+}
+
+.everypicture{
+    border: 2px dashed var(--terracotta-rose);
+    border-radius: 2rem;
+    background-color: var(--clay);
+}
+
+.gameon{
+    border: 2px dashed var(--olive-seed);
+    border-radius: 2rem;
+    background-color: var(--clay);
 }
