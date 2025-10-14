@@ -175,3 +175,10 @@ article h2{
     border-radius: 2rem;
     background-color: var(--clay);
 }
+
+
+
+.journalarticle{
+    padding-left: 4rem;
+    width: 600px;
+}
