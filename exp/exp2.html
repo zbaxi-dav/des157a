@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .play{
+            justify-items: center;
+        }
+
+        #eightball{
+            font-size: 12rem;
+        }
+
+        #eightball:hover{
+            animation: shake 0.5s ease-in-out;
+        }
+
+        @keyframes shake{
+            0%{transform: rotate(0deg);}
+            25%{transform: rotate(-30deg);}
+            50%{transform: rotate(30deg);}
+            75%{transform: rotate(-30deg);}
+            100%{transform: rotate(0deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <p><a href="../index.html"> <- go back to home portal</a></p>
+    <h1>Experiment 2</h1>
+    <div class="play">
+        <h2>welcome to the magic 8 ball, click to ask your question!</h2>
+        <div id="eightball"> &#x1F3B1;</div>
+        <div id="finalresponse"></div>
+    </div>
+    <script>
+        //i am creating a script that acts just like an 8ball but digital! the player enters a question from the prompt and the 8ball spits out a response. 
+        //examples of responses found on basic 8 balls from here ->  https://magic-8ball.com/magic-8-ball-answers/
+        var responses = ["yes, definitely", "without a doubt", "signs point to yes", "reply hazy, try again", "ask again later", "better not tell you now", "don't count on it", "my sources say no", "very doubtful"];
+
+        //grabbing from functions example
+        function random(){
+            var randomnumber = Math.floor(Math.random() * responses.length);
+            return responses[randomnumber];
+        }
+
+        function askquestion(){
+            var question = prompt("what worries, concerns, questions, thoughts, dreams... do you want to ask the 8 ball? we prefer a yes or no styled question :)");
+            var finalresponse = document.querySelector("#finalresponse");
+            //if they enter a question
+            if (question){
+                var final = random();
+                finalresponse.innerHTML = `<p>i thought long an hard about your question: <strong>${question}...</strong> <p><strong>${final}</strong></p> <br><p>thanks for playing, reload to ask another question :)</p>`;
+            }
+             //if they fail to ask a question
+            else{
+             finalresponse.innerHTML = `<p>little offended you didn't want to ask a question... try again by reloading</p>`;
+            }
+        }
+        askquestion();
+    </script>
+</body>
+</html>
