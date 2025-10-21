@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra's MadLib</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> 
+
+</head>
+<body>
+    <header>
+        <!-- I no longer liked my old idea anymore -->
+         <p>i plan to add a logo here</p>
+        <h1>Welcome to The Cozy Kettle</h1>
+        <p>Fill out what you would like and we'll get started on your order shortly!</p>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Order Here!</legend>
+
+                <label for = "name">Your name:</label>
+                <input type = "text" id = "name">
+
+                <label for = "temp">Temperature for drink:</label>
+                <select id="temp" name="temp">
+                    <option value = "">Choose</option>
+                    <option>Hot</option>
+                    <option>Warm</option>
+                    <option>Iced</option>
+                </select>
+
+                <label for = "type">Type of drink:</label>
+                <select id="type" name="type">
+                    <option value = "">Choose</option>
+                    <option>Coffee</option>
+                    <option>Chai</option>
+                    <option>Cider</option>
+                    <option>Tea</option>
+                    <option>Milk</option>
+                </select>
+
+                <label for = "flavor">Syrup or Flavor:</label>
+                <input type = "text" id = "flavor">
+
+
+                <label for = "pastry">Favorite pastry:</label>
+                <input type = "text" id = "pastry">
+                
+                <label for = "verb">What are you doing at the cafe today (verb ending in -ing)?</label>
+                <input type = "text" id = "verb">
+
+                <label for = "weather">What is your prefered weather?</label>
+                <input type = "text" id = "weather">
+
+                <input type = "submit" value = "Place Order!">
+
+            </fieldset>
+        </form>
+
+        <article>
+            <!-- PART OF JS -->
+            <h2>Your Order Summary!</h2>
+            <p>JavaScript elements will end up here!</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>© The Cozy Kettle - Handcrafted w/ HTML/CSS/JS and a little bit of pumpkin spice!</p>
+    </footer>
+    
+</body>
+</html>
