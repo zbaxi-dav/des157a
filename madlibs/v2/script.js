@@ -19,9 +19,6 @@
             alert('please fill in something! we would really love to serve you!');
             article.innerHTML =`please fill in something! we would really love to serve you!`;
         }
-        else{
-            
-        }
         const madlib = 
         `<h2>Welcome to The Cozy Kettle</h2>
         <p>today it is a<strong>${weather}</strong> afternoon at The Cozy Kettle. There is a soft whisper of chatter in the air, steaming milk in the background with a faint scent of roasted beans and buttery pastries.</p>
