@@ -28,7 +28,7 @@
         <p>${name} walks in, the bell above the door giving a soft jingle to annouce their entrance. They order a <strong>${temp} ${type}</strong> with a touch of <strong>${flavor}</strong> and a <strong>${pastry}</strong> to go with it.</p>
         <While waiting, ${name} glances around, a barista hums to the quiet rhythm of jazz in the background and as sunlight filters through the cafe's lace curtains</p>
         <p>They settle into to their usual spot, by the window at the front of the cafe, watching people pass by as they take their first sip of <strong>${temp} ${type}</strong>. The drink and the pastry feel like a small comfort in an otherwise ordinary day.</p> 
-        <p>The afternoon drifts by as ${name} spends the rest of it <strong>${verb}</strong>, lost in their thoughts, the sound of music echoing through the cafe. The world outside moves slower here, as if time itself pauses to enjoy a cup of tea.</p>
+        <p>The afternoon drifts by as ${name} spends the rest of it <strong>${verb}</strong>, lost in their thoughts, the sound of music echoing through the cafe. The world outside moves slower here, as if time itself pauses to enjoy a cup of ${type}.</p>
         `;
 
         const article = document.querySelector('article');
