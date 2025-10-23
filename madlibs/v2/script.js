@@ -21,7 +21,7 @@
         }
         const madlib = 
         `<h2>Welcome to The Cozy Kettle</h2>
-        <p>today it is a<strong>${weather}</strong> afternoon at The Cozy Kettle. There is a soft whisper of chatter in the air, steaming milk in the background with a faint scent of roasted beans and buttery pastries.</p>
+        <p>today it is a<strong> ${weather}</strong> afternoon at The Cozy Kettle. There is a soft whisper of chatter in the air, steaming milk in the background with a faint scent of roasted beans and buttery pastries.</p>
         <p>${name} walks in, the bell above the door giving a soft jingle to annouce their entrance. They order a <strong>${temp} ${type}</strong> with a touch of <strong>${flavor}</strong> and a <strong>${pastry}</strong> to go with it.</p>
         <While waiting, ${name} glances around, a barista hums to the quiet rhythm of jazz in the background and as sunlight filters through the cafe's lace curtains</p>
         <p>They settle into to their usual spot, by the window at the front of the cafe, watching people pass by as they take their first sip of <strong>${temp} ${type}</strong>. The drink and the pastry feel like a small comfort in an otherwise ordinary day.</p> 
