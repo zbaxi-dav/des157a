@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf5;
+    color: #4b3b32;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADING STYLING */
+header{
+    background-color: #d9c6b2;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1{
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+header p{
+    font-style: italic;
+    color: #6b5143;
+}
+
+
+/* MAIN AND ARTICLE STYLING */
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    padding: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+article{
+    background-color: #f9ede3;
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 2px dashed #d9c6b2;
+    width: 300px;
+    text-align: center;
+}
+
+/* FOOTER STYLING */
+footer{
+    background-color: #d9c6b2;
+    color: #6b5143;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+
+/* FORM STYLING */
+form{
+    background-color: #f9ede3;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px dashed #d9c6b2;
+    width: 350px;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #5a3d2b;
+    text-align: center;
+}
+
+input[type="text"], select{
+    padding: 0.6rem;
+    border: none;
+}
+
+input[type="submit"]{
+    font-family: monospace;
+    background-color: #d9c6b2;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #5a3d2b;
+    color: #d9c6b2;
+}
