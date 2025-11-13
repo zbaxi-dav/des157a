@@ -34,6 +34,8 @@ header {
     max-width: 300px;
     width: 100%;
     height: auto;
+    padding-top: 2rem;
+
 }
 
 .container {
@@ -75,6 +77,12 @@ header {
     cursor: pointer;
 }
 
+.dish-photo {
+  display: block;
+  max-width: 25%;
+  margin: 0 auto 1rem auto;
+}
+
 
 .desc {
     text-align: center;
@@ -107,13 +115,12 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(60, 34, 34, 0.6); /* tamarind*/
+    background-color: rgba(242, 203, 194, 0.8); /* tamarind*/
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    backdrop-filter: blur(4px);
-    animation: fadeIn 0.3s ease;
+    /* animation: fadeIn 0.3s ease; */
 }
 
 .hidden {
@@ -121,17 +128,19 @@ header {
 }
 
 .lightbox-content {
-    background-color: var(--cardamom);
-    padding: 2rem;
-    border: 2px solid var(--rose);
-    border-radius: 20px;
-    max-width: 550px;
-    width: 90%;
-    text-align: left;
-    position: relative;
-    font-family: 'Trap', sans-serif;
-    color: var(--clove);
-    animation: popIn 0.25s ease-out;
+  background-color: var(--cardamom);
+  padding: 2rem;
+  border: 2px solid var(--rose);
+  border-radius: 20px;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  font-family: 'Trap', sans-serif;
+  color: var(--clove);
+  /* animation: popIn 0.25s ease-out; */
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
 .lightbox-content h2 {
@@ -146,6 +155,22 @@ header {
     margin: 0.5rem 0 0;
 }
 
+.lightbox-content ul,
+.lightbox-content ol {
+  text-align: left;          /* Left align list items */
+  /* display: inline-block;     Keeps them centered overall if main text is centered */
+  width: 500px;
+  margin: 0.5rem auto;       /* Remove big gaps */
+  padding-left: 1.2rem;      /* Normal indentation */
+  line-height: 1.4;
+}
+
+/* Optional: center list titles but not bullets */
+.lightbox-content h2,
+.lightbox-content h3 {
+  text-align: center;
+}
+
 .close-lightbox {
     position: absolute;
     top: 10px;
@@ -155,11 +180,10 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    /* transition: transform 0.2s ease; */
 }
 
 .close-lightbox:hover {
-    transform: scale(1.1);
     color: var(--rose);
 }
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gather: Digital Cookbook</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,71 +30,533 @@
 
 <div class="desc">
     <h2>Welcome!</h2>
-    <p>Gather is a digital cookbook celebrating shared meals and stories. Hover over each dish on the table to explore recipes and memories behind them. NOTE FOR NOW THE CIRCLES ARE VISIBLE BUT LATER WOULD BE 0 OPACTICTY WITH IMAGES OF THE FOOD INSTEAD VISIBLE. CLICKING THE CIRCLE HOTSPOT WOULD THEN OPEN A LIGHTBOX (THE HTML IS IMPLMENTED BUT HIDDEN CURRENTLY) FOR EACH RECIPE</p>
+    <p>Gather is a digital cookbook celebrating shared meals and stories. Click on each dish on the table to explore recipes and memories behind them.</p>
 </div>
 
 <div class="lightboxes">
 
+    <!-- 1 -->
     <div class="lightbox hidden" id="lightbox1">
       <div class="lightbox-content">
-        <button class="close-lightbox">&times;</button>
-        <h2>Dish 1: Vegetarian Paella</h2>
-        <p>about dish 1 blah blah blah</p>
-        <img src="images/dish1.jpg" alt="Dish Name" class="dish-photo">
+        <button class="close-lightbox">x</button>
+        <img src="images/dish7.png" alt="Vegetarian Paella" class="dish-photo">
+
+        <h2>1</h2>
+        <h3>The Story</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <h3>Ingredients</h3>
+          <ul>
+            <li>¾ cup short-grain rice</li>
+            <li>1½–2 cups vegetable broth</li>
+            <li>1 tbsp olive oil</li>
+            <li>½ small onion, finely diced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>½ tsp smoked paprika</li>
+            <li>¼ tsp turmeric (or saffron if you want the authentic touch)</li>
+            <li>Salt & pepper, to taste</li>
+          </ul>
+        <h3>Topping Suggestions</h3>
+          <ul>
+            <li>Red bell pepper, sliced into strips</li>
+            <li>Cherry tomatoes (halved)</li>
+            <li>Artichoke hearts</li>
+            <li>Cooked chickpeas</li>
+            <li>Lemon wedges</li>
+          </ul>
+        <h3>Instructions</h3>
+          <ol>
+            <li><strong>Prep the Pan</strong>
+              <ul>
+                <li>Heat olive oil in a skillet (ideally wide and shallow) over medium heat.</li>
+                <li>Add onion and garlic, cook 3–4 minutes until softened.</li>
+              </ul>
+            </li>
+
+            <li><strong>Build Flavor</strong>
+              <ul>
+                <li>Stir in smoked paprika and turmeric (or saffron). Toast the spices for 30 seconds.</li>
+                <li>Add rice and stir to coat grains with oil and spices. Cook 1–2 minutes until rice edges look translucent.</li>
+              </ul>
+            </li>
+
+            <li><strong>Add Liquids & Veggies</strong>
+              <ul>
+                <li>Pour in warm broth (start with 1½ cups) and stir once to spread rice evenly, then <strong>do not stir again</strong> (helps form the crust).</li>
+                <li>Add bell peppers, cherry tomatoes, artichokes, and chickpeas, arranging them decoratively if you like.</li>
+                <li>Season with salt and pepper.</li>
+              </ul>
+            </li>
+
+            <li><strong>Cook the Paella</strong>
+              <ul>
+                <li>Bring to a simmer, then reduce heat to medium-low. Cook uncovered 20–25 minutes, until rice is tender and most liquid is absorbed.</li>
+                <li>If rice isn’t done but pan is dry, splash in more warm broth.</li>
+              </ul>
+            </li>
+
+            <li><strong>Create Socarrat (Optional but Authentic)</strong>
+              <ul>
+                <li>Once rice is cooked, increase heat to medium-high for 1–2 minutes to toast the bottom slightly (it should smell toasty, not burnt).</li>
+              </ul>
+            </li>
+
+            <li><strong>Finish & Serve</strong>
+              <ul>
+                <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
+                <li>Garnish with fresh parsley and lemon wedges.</li>
+              </ul>
+            </li>
+          </ol>
       </div>
     </div>
 
+    <!-- PIZZA -->
     <div class="lightbox hidden" id="lightbox2">
       <div class="lightbox-content">
-        <button class="close-lightbox">&times;</button>
-        <h2>Dish 2: Roti</h2>
-        <p>about dish 2 blah blah blah.</p>
-        <img src="images/dish2.jpg" alt="Dish Name" class="dish-photo">
+        <button class="close-lightbox">x</button>
+        <img src="images/dish2.png" alt="Pizza" class="dish-photo">
+
+        <h2>PIZZA</h2>
+        <h3>The Story</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <h3>Ingredients</h3>
+          <ul>
+            <li>¾ cup short-grain rice</li>
+            <li>1½–2 cups vegetable broth</li>
+            <li>1 tbsp olive oil</li>
+            <li>½ small onion, finely diced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>½ tsp smoked paprika</li>
+            <li>¼ tsp turmeric (or saffron if you want the authentic touch)</li>
+            <li>Salt & pepper, to taste</li>
+          </ul>
+        <h3>Topping Suggestions</h3>
+          <ul>
+            <li>Red bell pepper, sliced into strips</li>
+            <li>Cherry tomatoes (halved)</li>
+            <li>Artichoke hearts</li>
+            <li>Cooked chickpeas</li>
+            <li>Lemon wedges</li>
+          </ul>
+        <h3>Instructions</h3>
+          <ol>
+            <li><strong>Prep the Pan</strong>
+              <ul>
+                <li>Heat olive oil in a skillet (ideally wide and shallow) over medium heat.</li>
+                <li>Add onion and garlic, cook 3–4 minutes until softened.</li>
+              </ul>
+            </li>
+
+            <li><strong>Build Flavor</strong>
+              <ul>
+                <li>Stir in smoked paprika and turmeric (or saffron). Toast the spices for 30 seconds.</li>
+                <li>Add rice and stir to coat grains with oil and spices. Cook 1–2 minutes until rice edges look translucent.</li>
+              </ul>
+            </li>
+
+            <li><strong>Add Liquids & Veggies</strong>
+              <ul>
+                <li>Pour in warm broth (start with 1½ cups) and stir once to spread rice evenly, then <strong>do not stir again</strong> (helps form the crust).</li>
+                <li>Add bell peppers, cherry tomatoes, artichokes, and chickpeas, arranging them decoratively if you like.</li>
+                <li>Season with salt and pepper.</li>
+              </ul>
+            </li>
+
+            <li><strong>Cook the Paella</strong>
+              <ul>
+                <li>Bring to a simmer, then reduce heat to medium-low. Cook uncovered 20–25 minutes, until rice is tender and most liquid is absorbed.</li>
+                <li>If rice isn’t done but pan is dry, splash in more warm broth.</li>
+              </ul>
+            </li>
+
+            <li><strong>Create Socarrat (Optional but Authentic)</strong>
+              <ul>
+                <li>Once rice is cooked, increase heat to medium-high for 1–2 minutes to toast the bottom slightly (it should smell toasty, not burnt).</li>
+              </ul>
+            </li>
+
+            <li><strong>Finish & Serve</strong>
+              <ul>
+                <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
+                <li>Garnish with fresh parsley and lemon wedges.</li>
+              </ul>
+            </li>
+          </ol>
       </div>
     </div>
 
+    <!-- INDIAN HALWA -->
     <div class="lightbox hidden" id="lightbox3">
       <div class="lightbox-content">
-        <button class="close-lightbox">&times;</button>
-        <h2>Dish 3: Cardamom Rice Pudding</h2>
-        <p>about dish 3 blah blah blah</p>
-        <img src="images/dish3.jpg" alt="Dish Name" class="dish-photo">
+        <button class="close-lightbox">x</button>
+        <img src="images/dish7.png" alt="Indian Halwa" class="dish-photo">
+
+        <h2>Indian Halwa</h2>
+        <h3>The Story</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <h3>Ingredients</h3>
+          <ul>
+            <li>¾ cup short-grain rice</li>
+            <li>1½–2 cups vegetable broth</li>
+            <li>1 tbsp olive oil</li>
+            <li>½ small onion, finely diced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>½ tsp smoked paprika</li>
+            <li>¼ tsp turmeric (or saffron if you want the authentic touch)</li>
+            <li>Salt & pepper, to taste</li>
+          </ul>
+        <h3>Topping Suggestions</h3>
+          <ul>
+            <li>Red bell pepper, sliced into strips</li>
+            <li>Cherry tomatoes (halved)</li>
+            <li>Artichoke hearts</li>
+            <li>Cooked chickpeas</li>
+            <li>Lemon wedges</li>
+          </ul>
+        <h3>Instructions</h3>
+          <ol>
+            <li><strong>Prep the Pan</strong>
+              <ul>
+                <li>Heat olive oil in a skillet (ideally wide and shallow) over medium heat.</li>
+                <li>Add onion and garlic, cook 3–4 minutes until softened.</li>
+              </ul>
+            </li>
+
+            <li><strong>Build Flavor</strong>
+              <ul>
+                <li>Stir in smoked paprika and turmeric (or saffron). Toast the spices for 30 seconds.</li>
+                <li>Add rice and stir to coat grains with oil and spices. Cook 1–2 minutes until rice edges look translucent.</li>
+              </ul>
+            </li>
+
+            <li><strong>Add Liquids & Veggies</strong>
+              <ul>
+                <li>Pour in warm broth (start with 1½ cups) and stir once to spread rice evenly, then <strong>do not stir again</strong> (helps form the crust).</li>
+                <li>Add bell peppers, cherry tomatoes, artichokes, and chickpeas, arranging them decoratively if you like.</li>
+                <li>Season with salt and pepper.</li>
+              </ul>
+            </li>
+
+            <li><strong>Cook the Paella</strong>
+              <ul>
+                <li>Bring to a simmer, then reduce heat to medium-low. Cook uncovered 20–25 minutes, until rice is tender and most liquid is absorbed.</li>
+                <li>If rice isn’t done but pan is dry, splash in more warm broth.</li>
+              </ul>
+            </li>
+
+            <li><strong>Create Socarrat (Optional but Authentic)</strong>
+              <ul>
+                <li>Once rice is cooked, increase heat to medium-high for 1–2 minutes to toast the bottom slightly (it should smell toasty, not burnt).</li>
+              </ul>
+            </li>
+
+            <li><strong>Finish & Serve</strong>
+              <ul>
+                <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
+                <li>Garnish with fresh parsley and lemon wedges.</li>
+              </ul>
+            </li>
+          </ol>
       </div>
     </div>
 
+    <!-- NAANI'S CHAI -->
     <div class="lightbox hidden" id="lightbox4">
       <div class="lightbox-content">
-        <button class="close-lightbox">&times;</button>
-        <h2>Dish 4: Masala Chai</h2>
-        <p>about dish 4 blah blah blah</p>
-        <img src="images/dish4.jpg" alt="Dish Name" class="dish-photo">
+        <button class="close-lightbox">x</button>
+        <img src="images/dish7.png" alt="Naani's Chai" class="dish-photo">
+
+        <h2>Naani's Chai</h2>
+        <h3>The Story</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <h3>Ingredients</h3>
+          <ul>
+            <li>¾ cup short-grain rice</li>
+            <li>1½–2 cups vegetable broth</li>
+            <li>1 tbsp olive oil</li>
+            <li>½ small onion, finely diced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>½ tsp smoked paprika</li>
+            <li>¼ tsp turmeric (or saffron if you want the authentic touch)</li>
+            <li>Salt & pepper, to taste</li>
+          </ul>
+        <h3>Topping Suggestions</h3>
+          <ul>
+            <li>Red bell pepper, sliced into strips</li>
+            <li>Cherry tomatoes (halved)</li>
+            <li>Artichoke hearts</li>
+            <li>Cooked chickpeas</li>
+            <li>Lemon wedges</li>
+          </ul>
+        <h3>Instructions</h3>
+          <ol>
+            <li><strong>Prep the Pan</strong>
+              <ul>
+                <li>Heat olive oil in a skillet (ideally wide and shallow) over medium heat.</li>
+                <li>Add onion and garlic, cook 3–4 minutes until softened.</li>
+              </ul>
+            </li>
+
+            <li><strong>Build Flavor</strong>
+              <ul>
+                <li>Stir in smoked paprika and turmeric (or saffron). Toast the spices for 30 seconds.</li>
+                <li>Add rice and stir to coat grains with oil and spices. Cook 1–2 minutes until rice edges look translucent.</li>
+              </ul>
+            </li>
+
+            <li><strong>Add Liquids & Veggies</strong>
+              <ul>
+                <li>Pour in warm broth (start with 1½ cups) and stir once to spread rice evenly, then <strong>do not stir again</strong> (helps form the crust).</li>
+                <li>Add bell peppers, cherry tomatoes, artichokes, and chickpeas, arranging them decoratively if you like.</li>
+                <li>Season with salt and pepper.</li>
+              </ul>
+            </li>
+
+            <li><strong>Cook the Paella</strong>
+              <ul>
+                <li>Bring to a simmer, then reduce heat to medium-low. Cook uncovered 20–25 minutes, until rice is tender and most liquid is absorbed.</li>
+                <li>If rice isn’t done but pan is dry, splash in more warm broth.</li>
+              </ul>
+            </li>
+
+            <li><strong>Create Socarrat (Optional but Authentic)</strong>
+              <ul>
+                <li>Once rice is cooked, increase heat to medium-high for 1–2 minutes to toast the bottom slightly (it should smell toasty, not burnt).</li>
+              </ul>
+            </li>
+
+            <li><strong>Finish & Serve</strong>
+              <ul>
+                <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
+                <li>Garnish with fresh parsley and lemon wedges.</li>
+              </ul>
+            </li>
+          </ol>
       </div>
     </div>
 
+    <!-- CHAAT -->
     <div class="lightbox hidden" id="lightbox5">
       <div class="lightbox-content">
-        <button class="close-lightbox">&times;</button>
-        <h2>Dish 5: Raviolli</h2>
-        <p>about dish 5 blah blah blah</p>
-        <img src="images/dish5.jpg" alt="Dish Name" class="dish-photo">
+        <button class="close-lightbox">x</button>
+        <img src="images/dish7.png" alt="Chaat" class="dish-photo">
+
+        <h2>CHAAT</h2>
+        <h3>The Story</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <h3>Ingredients</h3>
+          <ul>
+            <li>¾ cup short-grain rice</li>
+            <li>1½–2 cups vegetable broth</li>
+            <li>1 tbsp olive oil</li>
+            <li>½ small onion, finely diced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>½ tsp smoked paprika</li>
+            <li>¼ tsp turmeric (or saffron if you want the authentic touch)</li>
+            <li>Salt & pepper, to taste</li>
+          </ul>
+        <h3>Topping Suggestions</h3>
+          <ul>
+            <li>Red bell pepper, sliced into strips</li>
+            <li>Cherry tomatoes (halved)</li>
+            <li>Artichoke hearts</li>
+            <li>Cooked chickpeas</li>
+            <li>Lemon wedges</li>
+          </ul>
+        <h3>Instructions</h3>
+          <ol>
+            <li><strong>Prep the Pan</strong>
+              <ul>
+                <li>Heat olive oil in a skillet (ideally wide and shallow) over medium heat.</li>
+                <li>Add onion and garlic, cook 3–4 minutes until softened.</li>
+              </ul>
+            </li>
+
+            <li><strong>Build Flavor</strong>
+              <ul>
+                <li>Stir in smoked paprika and turmeric (or saffron). Toast the spices for 30 seconds.</li>
+                <li>Add rice and stir to coat grains with oil and spices. Cook 1–2 minutes until rice edges look translucent.</li>
+              </ul>
+            </li>
+
+            <li><strong>Add Liquids & Veggies</strong>
+              <ul>
+                <li>Pour in warm broth (start with 1½ cups) and stir once to spread rice evenly, then <strong>do not stir again</strong> (helps form the crust).</li>
+                <li>Add bell peppers, cherry tomatoes, artichokes, and chickpeas, arranging them decoratively if you like.</li>
+                <li>Season with salt and pepper.</li>
+              </ul>
+            </li>
+
+            <li><strong>Cook the Paella</strong>
+              <ul>
+                <li>Bring to a simmer, then reduce heat to medium-low. Cook uncovered 20–25 minutes, until rice is tender and most liquid is absorbed.</li>
+                <li>If rice isn’t done but pan is dry, splash in more warm broth.</li>
+              </ul>
+            </li>
+
+            <li><strong>Create Socarrat (Optional but Authentic)</strong>
+              <ul>
+                <li>Once rice is cooked, increase heat to medium-high for 1–2 minutes to toast the bottom slightly (it should smell toasty, not burnt).</li>
+              </ul>
+            </li>
+
+            <li><strong>Finish & Serve</strong>
+              <ul>
+                <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
+                <li>Garnish with fresh parsley and lemon wedges.</li>
+              </ul>
+            </li>
+          </ol>
       </div>
     </div>
 
+    <!-- RAVIOLI -->
     <div class="lightbox hidden" id="lightbox6">
       <div class="lightbox-content">
-        <button class="close-lightbox">&times;</button>
-        <h2>Dish 6: Mango Chutney</h2>
-        <p>about dish 6 blah blah blah</p>
-        <img src="images/dish6.jpg" alt="Dish Name" class="dish-photo">
+        <button class="close-lightbox">x</button>
+        <img src="images/dish7.png" alt="Ravioli" class="dish-photo">
+
+        <h2>Ravioli</h2>
+        <h3>The Story</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <h3>Ingredients</h3>
+          <ul>
+            <li>¾ cup short-grain rice</li>
+            <li>1½–2 cups vegetable broth</li>
+            <li>1 tbsp olive oil</li>
+            <li>½ small onion, finely diced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>½ tsp smoked paprika</li>
+            <li>¼ tsp turmeric (or saffron if you want the authentic touch)</li>
+            <li>Salt & pepper, to taste</li>
+          </ul>
+        <h3>Topping Suggestions</h3>
+          <ul>
+            <li>Red bell pepper, sliced into strips</li>
+            <li>Cherry tomatoes (halved)</li>
+            <li>Artichoke hearts</li>
+            <li>Cooked chickpeas</li>
+            <li>Lemon wedges</li>
+          </ul>
+        <h3>Instructions</h3>
+          <ol>
+            <li><strong>Prep the Pan</strong>
+              <ul>
+                <li>Heat olive oil in a skillet (ideally wide and shallow) over medium heat.</li>
+                <li>Add onion and garlic, cook 3–4 minutes until softened.</li>
+              </ul>
+            </li>
+
+            <li><strong>Build Flavor</strong>
+              <ul>
+                <li>Stir in smoked paprika and turmeric (or saffron). Toast the spices for 30 seconds.</li>
+                <li>Add rice and stir to coat grains with oil and spices. Cook 1–2 minutes until rice edges look translucent.</li>
+              </ul>
+            </li>
+
+            <li><strong>Add Liquids & Veggies</strong>
+              <ul>
+                <li>Pour in warm broth (start with 1½ cups) and stir once to spread rice evenly, then <strong>do not stir again</strong> (helps form the crust).</li>
+                <li>Add bell peppers, cherry tomatoes, artichokes, and chickpeas, arranging them decoratively if you like.</li>
+                <li>Season with salt and pepper.</li>
+              </ul>
+            </li>
+
+            <li><strong>Cook the Paella</strong>
+              <ul>
+                <li>Bring to a simmer, then reduce heat to medium-low. Cook uncovered 20–25 minutes, until rice is tender and most liquid is absorbed.</li>
+                <li>If rice isn’t done but pan is dry, splash in more warm broth.</li>
+              </ul>
+            </li>
+
+            <li><strong>Create Socarrat (Optional but Authentic)</strong>
+              <ul>
+                <li>Once rice is cooked, increase heat to medium-high for 1–2 minutes to toast the bottom slightly (it should smell toasty, not burnt).</li>
+              </ul>
+            </li>
+
+            <li><strong>Finish & Serve</strong>
+              <ul>
+                <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
+                <li>Garnish with fresh parsley and lemon wedges.</li>
+              </ul>
+            </li>
+          </ol>
       </div>
     </div>
 
+    <!-- VEGETARIAN PAELLA -->
     <div class="lightbox hidden" id="lightbox7">
       <div class="lightbox-content">
-        <button class="close-lightbox">&times;</button>
-        <h2>Dish 7: Pani Puri</h2>
-        <p>about dish 7 blah blah blah</p>
-        <img src="images/dish7.jpg" alt="Dish Name" class="dish-photo">
+        <button class="close-lightbox">x</button>
+        <img src="images/dish7.png" alt="Vegetarian Paella" class="dish-photo">
+
+        <h2>VEGETARIAN PAELLA</h2>
+        <h3>The Story</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <h3>Ingredients</h3>
+          <ul>
+            <li>¾ cup short-grain rice</li>
+            <li>1½–2 cups vegetable broth</li>
+            <li>1 tbsp olive oil</li>
+            <li>½ small onion, finely diced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>½ tsp smoked paprika</li>
+            <li>¼ tsp turmeric (or saffron if you want the authentic touch)</li>
+            <li>Salt & pepper, to taste</li>
+          </ul>
+        <h3>Topping Suggestions</h3>
+          <ul>
+            <li>Red bell pepper, sliced into strips</li>
+            <li>Cherry tomatoes (halved)</li>
+            <li>Artichoke hearts</li>
+            <li>Cooked chickpeas</li>
+            <li>Lemon wedges</li>
+          </ul>
+        <h3>Instructions</h3>
+          <ol>
+            <li><strong>Prep the Pan</strong>
+              <ul>
+                <li>Heat olive oil in a skillet (ideally wide and shallow) over medium heat.</li>
+                <li>Add onion and garlic, cook 3–4 minutes until softened.</li>
+              </ul>
+            </li>
+
+            <li><strong>Build Flavor</strong>
+              <ul>
+                <li>Stir in smoked paprika and turmeric (or saffron). Toast the spices for 30 seconds.</li>
+                <li>Add rice and stir to coat grains with oil and spices. Cook 1–2 minutes until rice edges look translucent.</li>
+              </ul>
+            </li>
+
+            <li><strong>Add Liquids & Veggies</strong>
+              <ul>
+                <li>Pour in warm broth (start with 1½ cups) and stir once to spread rice evenly, then <strong>do not stir again</strong> (helps form the crust).</li>
+                <li>Add bell peppers, cherry tomatoes, artichokes, and chickpeas, arranging them decoratively if you like.</li>
+                <li>Season with salt and pepper.</li>
+              </ul>
+            </li>
+
+            <li><strong>Cook the Paella</strong>
+              <ul>
+                <li>Bring to a simmer, then reduce heat to medium-low. Cook uncovered 20–25 minutes, until rice is tender and most liquid is absorbed.</li>
+                <li>If rice isn’t done but pan is dry, splash in more warm broth.</li>
+              </ul>
+            </li>
+
+            <li><strong>Create Socarrat (Optional but Authentic)</strong>
+              <ul>
+                <li>Once rice is cooked, increase heat to medium-high for 1–2 minutes to toast the bottom slightly (it should smell toasty, not burnt).</li>
+              </ul>
+            </li>
+
+            <li><strong>Finish & Serve</strong>
+              <ul>
+                <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
+                <li>Garnish with fresh parsley and lemon wedges.</li>
+              </ul>
+            </li>
+          </ol>
       </div>
     </div>
 

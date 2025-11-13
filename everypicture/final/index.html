@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gather: Digital Cookbook</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/gatherlogo.png" alt="Gather Logo" class="logo">
+    </header>
+
+<main>
+    <div class="container">
+        <img src="images/gathertable.png" alt="Gathering Table" id="main-illustration">
+
+        <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="757" cy="463" r="50" id="dish1" />
+            <circle cx="1071" cy="463" r="58" id="dish2" />
+            <ellipse cx="1206" cy="478" rx="36" ry="35" id="dish3" />
+            <ellipse cx="1070.5" cy="578.5" rx="29.5" ry="28.5" id="dish4" />
+            <ellipse cx="816" cy="573" rx="54" ry="52" id="dish5" />
+            <ellipse cx="949" cy="549.5" rx="50" ry="48.5" id="dish6" />
+            <circle cx="927" cy="418" r="72" id="dish7" />
+        </svg>
+    </div>
+</main>
+<!-- Music Button -->
+<button class="music-button" id="musicButton" title="Play Music">♪</button>
+<audio id="backgroundMusic" src="music.mp3" loop></audio>
+
+<!-- Info Icon -->
+<div class="info-icon" id="infoIcon" title="About Gather">?
+</div>
+
+<!-- Info Lightbox -->
+<div class="lightbox hidden" id="infoLightbox">
+  <div class="lightbox-content">
+    <button class="close-lightbox">x</button>
+    <h2>Welcome!</h2>
+    <p><em>Gather</em> is a digital cookbook about food that brings people together. I grew up in a culture where cooking is a love language and food was used as a way to bring family together and foster open dialogue between generations. Each recipe holds a small story such as something shared, learned, or passed down. Click on any dish on the table to explore the meals and memories behind them.</p>
+    <p>This project celebrates the act of cooking not just as a routine, but as a way to connect. You might find family traditions, community favorites, or simple comfort foods that are all tied together through the shared experience of gathering around a table.</p>
+    <p>MUSIC CREDITS: <br>"Poppers and Prosecco" Kevin MacLeod (incompetech.com) <br>Licensed under Creative Commons: By Attribution 4.0 License <br>http://creativecommons.org/licenses/by/4.0/</p>
+  </div>
+</div>
+
+
+<div class="lightboxes">
+
+    <!-- PUMPKIN MOLE ENCHILADAS -->
+    <div class="lightbox hidden" id="lightbox1">
+      <div class="lightbox-content">
+        <button class="close-lightbox">x</button>
+        <img src="images/dish1.png" alt="Pumpkin Mole Enchiladas" class="dish-photo">
+
+        <h2>PUMPKIN MOLE ENCHILADAS</h2>
+        <h3>The Story</h3>
+        <p>This dish started as a way to bring people together when the weather turned cool. I had some leftover pumpkin puree and started experimenting, blending it with the deep flavors of mole. The first time I made it, friends were gathered around the kitchen, tasting and suggesting what to add next. Now it’s become one of those dishes that feels like a small celebration—warm, rich, and best shared at a full table.</p>
+
+        <h3>Ingredients</h3>
+        <ul>
+          <li><strong>For the pumpkin mole sauce:</strong></li>
+          <ul>
+            <li>1 Tbsp olive oil</li>
+            <li>½ onion, diced</li>
+            <li>2 garlic cloves, minced</li>
+            <li>1 cup pumpkin purée (canned or homemade)</li>
+            <li>1 Tbsp tomato paste</li>
+            <li>1 tsp ground cumin</li>
+            <li>1 tsp smoked paprika</li>
+            <li>1 tsp chili powder (adjust for heat)</li>
+            <li>½ tsp cinnamon</li>
+            <li>½ tsp cocoa powder (unsweetened)</li>
+            <li>1 cup vegetable broth</li>
+            <li>1 Tbsp almond butter or peanut butter</li>
+            <li>1 tsp maple syrup</li>
+            <li>Salt & pepper, to taste</li>
+          </ul>
+
+          <li><strong>For the enchiladas:</strong></li>
+          <ul>
+            <li>4–6 corn or flour tortillas</li>
+            <li>1 cup black beans (cooked or canned, rinsed)</li>
+            <li>1 cup roasted vegetables (sweet potato, zucchini, or bell peppers work great)</li>
+            <li>½ cup vegan cheese (optional, for filling or topping)</li>
+            <li>Fresh cilantro or green onions, for garnish</li>
+          </ul>
+        </ul>
+        <img src="images/enchilladamaking.JPG" alt="Enchilada Making" class="making-photo">
+
+        <h3>Instructions</h3>
+        <ol>
+          <li><strong>Make the pumpkin mole sauce</strong>
+            <ul>
+              <li>In a skillet, heat olive oil over medium heat. Sauté onion and garlic until soft and fragrant.</li>
+              <li>Stir in pumpkin purée, tomato paste, cumin, smoked paprika, chili powder, cinnamon, and cocoa powder. Cook for 1–2 minutes.</li>
+              <li>Add broth, nut butter, and maple syrup. Stir until smooth and slightly thickened (5–7 minutes). Adjust seasoning with salt & pepper.</li>
+            </ul>
+          </li>
+
+          <li><strong>Prepare the filling</strong>
+            <ul>
+              <li>In a bowl, mix black beans and roasted veggies. Add a spoonful of mole sauce to lightly coat.</li>
+            </ul>
+          </li>
+
+          <li><strong>Assemble enchiladas</strong>
+            <ul>
+              <li>Preheat oven to 375°F (190°C).</li>
+              <li>Warm tortillas to make them flexible. Spoon filling into each tortilla, roll up, and place seam-side down in a baking dish.</li>
+              <li>Pour mole sauce over the top and spread evenly. Sprinkle with vegan cheese if using.</li>
+            </ul>
+          </li>
+
+          <li><strong>Bake</strong>
+            <ul>
+              <li>Cover with foil and bake for 15 minutes. Remove foil and bake another 10 minutes until heated through and edges crisp slightly.</li>
+            </ul>
+          </li>
+
+          <li><strong>Serve</strong>
+            <ul>
+              <li>Garnish with cilantro or green onions. Serve hot with a side of rice or a simple salad.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- PIZZA -->
+    <div class="lightbox hidden" id="lightbox2">
+    <div class="lightbox-content">
+      <button class="close-lightbox">x</button>
+      <img src="images/dish2.png" alt="Pizza" class="dish-photo">
+
+      <h2>COMMUNITY PIZZA</h2>
+
+      <h3>The Story</h3>
+      <p>This pizza started on a night when everyone wanted something different. One person wanted spicy, another wanted simple, and someone else just wanted more cheese. We rolled out the dough together and filled the table with toppings like olives, peppers, and fresh herbs from the garden. It became a small tradition, a make-your-own night where everyone gets a slice that fits them.</p>
+
+
+      <h3>Base Dough</h3>
+      <ul>
+        <li>2¼ tsp active dry yeast (1 packet)</li>
+        <li>¾ cup warm water</li>
+        <li>1 tsp sugar</li>
+        <li>2 cups all-purpose flour</li>
+        <li>1 tsp salt</li>
+        <li>1 tbsp olive oil</li>
+      </ul>
+
+      <h3>Sauce</h3>
+      <ul>
+        <li>1 cup crushed tomatoes</li>
+        <li>1 clove garlic, minced</li>
+        <li>1 tsp olive oil</li>
+        <li>½ tsp oregano</li>
+        <li>Salt & pepper, to taste</li>
+      </ul>
+
+      <h3>Topping Suggestions</h3>
+      <ul>
+        <li>Mozzarella, feta, or cashew cheese</li>
+        <li>Bell peppers, mushrooms, or zucchini</li>
+        <li>Cherry tomatoes or sun-dried tomatoes</li>
+        <li>Spinach, basil, or arugula</li>
+        <li>Olives, red onion, or roasted garlic</li>
+        <li>Chili flakes or balsamic glaze to finish</li>
+      </ul>
+      <img src="images/pizzamaking.JPG" alt="Pizza Making" class="making-photo">
+
+      <h3>Instructions</h3>
+      <ol>
+        <li><strong>Activate the Yeast</strong>
+          <ul>
+            <li>Mix warm water, sugar, and yeast in a small bowl. Let it sit for 5–10 minutes until foamy.</li>
+          </ul>
+        </li>
+
+        <li><strong>Make the Dough</strong>
+          <ul>
+            <li>In a large bowl, combine flour and salt. Add olive oil and the yeast mixture.</li>
+            <li>Knead until smooth and elastic, about 5–7 minutes. Cover and let rise for 45 minutes to an hour.</li>
+          </ul>
+        </li>
+
+        <li><strong>Prepare the Sauce</strong>
+          <ul>
+            <li>While the dough rises, heat olive oil in a pan. Add garlic, cook for 30 seconds, then stir in tomatoes and oregano.</li>
+            <li>Simmer 10 minutes, season with salt and pepper, then cool slightly.</li>
+          </ul>
+        </li>
+
+        <li><strong>Assemble</strong>
+          <ul>
+            <li>Preheat oven to 475°F (245°C). Roll out the dough on a floured surface.</li>
+            <li>Spread a thin layer of sauce, then let everyone add their favorite toppings.</li>
+          </ul>
+        </li>
+
+        <li><strong>Bake</strong>
+          <ul>
+            <li>Transfer to a baking sheet or stone and bake 10–14 minutes, until the crust is golden and cheese is bubbling.</li>
+          </ul>
+        </li>
+
+        <li><strong>Serve & Share</strong>
+          <ul>
+            <li>Slice and serve hot, swapping stories and bites. Every pizza ends up different, but it’s always shared.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    </div>
+
+
+    <!-- INDIAN HALWA -->
+    <div class="lightbox hidden" id="lightbox3">
+    <div class="lightbox-content">
+      <button class="close-lightbox">x</button>
+      <img src="images/dish3.png" alt="Indian Halwa" class="dish-photo">
+
+      <h2>Indian Halwa</h2>
+      <h3>The Story</h3>
+      <p>My dad used to make halwa when I was little, the only time I ever liked vegetables in a dessert. The whole kitchen smelled like ghee and cardamom, and I’d wait by the stove for a taste before it even cooled. Now I make it to share that same warmth with friends. It’s simple, comforting, and always brings people together around the table.</p>
+
+
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>2 cups grated carrot or beetroot</li>
+        <li>2 tbsp ghee or neutral oil</li>
+        <li>1½ cups milk (or oat milk)</li>
+        <li>¼ cup sugar (adjust to taste)</li>
+        <li>¼ tsp cardamom powder</li>
+        <li>2 tbsp chopped nuts (cashews, almonds, or pistachios)</li>
+        <li>Raisins (optional)</li>
+        <li>Pinch of salt</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li><strong>Cook the Base</strong>
+          <ul>
+            <li>Heat ghee in a pan over medium heat.</li>
+            <li>Add grated carrot or beetroot and sauté for 5–7 minutes until softened and slightly fragrant.</li>
+          </ul>
+        </li>
+
+        <li><strong>Add Milk and Simmer</strong>
+          <ul>
+            <li>Pour in the milk and stir well.</li>
+            <li>Cook on medium heat until most of the milk is absorbed, stirring occasionally so it doesn’t stick.</li>
+          </ul>
+        </li>
+
+        <li><strong>Sweeten and Flavor</strong>
+          <ul>
+            <li>Add sugar, cardamom, and a pinch of salt.</li>
+            <li>Stir and cook until the mixture thickens and turns glossy.</li>
+          </ul>
+        </li>
+
+        <li><strong>Finish with Nuts</strong>
+          <ul>
+            <li>In a small pan, lightly toast the nuts and raisins in a little ghee.</li>
+            <li>Stir them into the halwa and serve warm.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+
+    <!-- NAANI'S CHAI -->
+    <div class="lightbox hidden" id="lightbox4">
+    <div class="lightbox-content">
+      <button class="close-lightbox">x</button>
+      <img src="images/dish4.png" alt="Naani's Chai" class="dish-photo">
+
+      <h2>Naani's Chai</h2>
+      <h3>The Story</h3>
+      <p>This chai will always remind me of my Naani. She used Society Tea leaves and never measured a thing, just knew when it was right by the color. She’d let the water and sugar boil before adding milk, standing over the stove with her spoon tapping the pot. I learned to make it the same way, and now I share it with friends on quiet mornings or long afternoons. It’s a small way to bring her warmth into new homes.</p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 cup water</li>
+        <li>2 teaspoons loose Society Tea leaves (or any strong black tea)</li>
+        <li>2 teaspoons sugar (adjust to taste)</li>
+        <li>½ cup milk</li>
+        <li>Optional: a small piece of ginger or a pinch of cardamom</li>
+      </ul>
+      <img src="images/chaimaking.JPG" alt="Chai Making" class="making-photo">
+
+      <h3>Instructions</h3>
+      <ol>
+        <li><strong>Boil the Base</strong>
+          <ul>
+            <li>In a small pot, bring water to a boil.</li>
+            <li>Add sugar and tea leaves. Let it boil for about 2–3 minutes until the water darkens and the aroma deepens.</li>
+          </ul>
+        </li>
+
+        <li><strong>Add Milk</strong>
+          <ul>
+            <li>Pour in the milk and reduce the heat slightly.</li>
+            <li>Let the chai heat until it begins to rise, then turn off the stove before it spills over.</li>
+          </ul>
+        </li>
+
+        <li><strong>Strain & Serve</strong>
+          <ul>
+            <li>Strain the tea into cups and serve hot.</li>
+            <li>Enjoy it with biscuits, a good story, or quiet company.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+
+    <!-- CHAAT -->
+    <div class="lightbox hidden" id="lightbox5">
+    <div class="lightbox-content">
+      <button class="close-lightbox">x</button>
+      <img src="images/dish5.png" alt="Chaat" class="dish-photo">
+
+      <h2>CHAAT</h2>
+      <h3>The Story</h3>
+      <p>Chaat is one of those things that everyone makes differently. Some like it spicy, some like it sweet, and some just want all the toppings. I started making it because it’s fun to put out a bunch of ingredients and let everyone build their own. It’s an easy way to get people talking, trying new things, and sharing what they like. There’s always a little bit of a mess, but that’s part of the fun.</p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>2 medium potatoes, boiled and cubed</li>
+        <li>1 cup cooked chickpeas</li>
+        <li>1 small red onion, finely chopped</li>
+        <li>1 tomato, diced</li>
+        <li>1 green chili, finely chopped (optional)</li>
+        <li>1 tsp chaat masala</li>
+        <li>½ tsp cumin powder</li>
+        <li>Salt to taste</li>
+        <li>Lemon juice, to taste</li>
+      </ul>
+
+      <h3>Topping Suggestions</h3>
+      <ul>
+        <li>Tamarind or mint chutney</li>
+        <li>Yogurt or vegan yogurt</li>
+        <li>Mango pieces or pomegranate seeds</li>
+        <li>Sev or crushed papdi</li>
+        <li>Fresh cilantro</li>
+      </ul>
+      <img src="images/chaatmaking.JPG" alt="Chaat Making" class="making-photo">
+
+      <h3>Instructions</h3>
+      <ol>
+        <li><strong>Mix the Base</strong>
+          <ul>
+            <li>Combine potatoes, chickpeas, onion, tomato, and green chili in a large bowl.</li>
+            <li>Add chaat masala, cumin, salt, and lemon juice. Toss gently to mix.</li>
+          </ul>
+        </li>
+
+        <li><strong>Customize</strong>
+          <ul>
+            <li>Spread the base on plates or in small bowls.</li>
+            <li>Top with chutneys, yogurt, sev, and anything else you like.</li>
+          </ul>
+        </li>
+
+        <li><strong>Serve</strong>
+          <ul>
+            <li>Serve immediately so everything stays crisp.</li>
+            <li>Perfect for a chaat bar setup. Let everyone build their own combination.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+
+    <!-- RAVIOLI -->
+  <div class="lightbox hidden" id="lightbox6">
+    <div class="lightbox-content">
+      <button class="close-lightbox">x</button>
+      <img src="images/dish6.png" alt="Ravioli" class="dish-photo">
+
+      <h2>RAVIOLI</h2>
+      <h3>The Story</h3>
+      <p>This recipe started as a way to use up bits of leftover fillings—ricotta from lasagna, roasted veggies from dinner, or even mashed pumpkin from fall cooking. Now it’s become something I make when I want to slow down and share food with others. Everyone can help roll the dough, shape the ravioli, or pick their own fillings. It’s simple, a little messy, and always feels like a small celebration.</p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 cup all-purpose flour (or ½ AP + ½ semolina for more chew)</li>
+        <li>¼ tsp salt</li>
+        <li>2 tbsp olive oil</li>
+        <li>~⅓ cup warm water (add slowly; may need a little less)</li>
+      </ul>
+
+      <h3>Filling Ideas</h3>
+      <ul>
+        <li>Pumpkin + vegan ricotta</li>
+        <li>Mushroom + herbs</li>
+        <li>Spinach + “ricotta”</li>
+        <li>Roasted garlic + lemon zest</li>
+      </ul>
+      <img src="images/raviolimaking.JPG" alt="Ravioli Making" class="making-photo">
+
+      <h3>Instructions</h3>
+      <ol>
+        <li><strong>Make the Dough</strong>
+          <ul>
+            <li>Combine flour and salt in a bowl or on a clean counter.</li>
+            <li>Make a well in the center, add olive oil, and slowly pour in warm water.</li>
+            <li>Mix until a dough forms, then knead 6–8 minutes until smooth and elastic.</li>
+            <li>Cover and rest 30 minutes at room temperature.</li>
+          </ul>
+        </li>
+
+        <li><strong>Roll & Fill</strong>
+          <ul>
+            <li>Cut dough in half and roll each piece thin (1–2mm) on a floured surface.</li>
+            <li>Drop small spoonfuls of filling, about 1 tsp each, spaced 1–2 inches apart.</li>
+            <li>Brush around filling with water, lay the second sheet over, and seal edges.</li>
+            <li>Cut into squares and press with a fork to seal.</li>
+          </ul>
+        </li>
+
+        <li><strong>Cook the Ravioli</strong>
+          <ul>
+            <li>Bring a large pot of salted water to a gentle boil.</li>
+            <li>Cook ravioli 3–4 minutes or until they float and look slightly translucent.</li>
+            <li>Remove with a slotted spoon.</li>
+          </ul>
+        </li>
+
+        <li><strong>Finish with Sage Butter</strong>
+          <ul>
+            <li>In a skillet, melt 2 tbsp vegan butter until golden.</li>
+            <li>Add 3–4 sage leaves and fry until crisp.</li>
+            <li>Toss ravioli gently in the sage butter.</li>
+            <li>Optional: add toasted walnuts or a drizzle of balsamic glaze.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+
+    <!-- VEGETARIAN PAELLA -->
+  <div class="lightbox hidden" id="lightbox7">
+    <div class="lightbox-content">
+      <button class="close-lightbox">x</button>
+      <img src="images/dish7.png" alt="Vegetarian Paella" class="dish-photo">
+
+      <h2>VEGETARIAN PAELLA</h2>
+      <h3>The Story</h3>
+      <p>This dish started as a way to make dinner feel like an event, even on quiet nights. I first made it for a small dinner with friends where everyone brought something to toss into the pan like chickpeas, peppers, a handful of herbs. Now it’s what I make when I want something that feels both simple and special. It’s easy to scale up, fun to customize, and always brings people to the table before it’s even done cooking.</p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>¾ cup short-grain rice</li>
+        <li>1½–2 cups vegetable broth</li>
+        <li>1 tbsp olive oil</li>
+        <li>½ small onion, finely diced</li>
+        <li>2 cloves garlic, minced</li>
+        <li>½ tsp smoked paprika</li>
+        <li>¼ tsp turmeric (or saffron for a more traditional flavor)</li>
+        <li>Salt & pepper, to taste</li>
+      </ul>
+
+      <h3>Topping Suggestions</h3>
+      <ul>
+        <li>Red bell pepper, sliced into strips</li>
+        <li>Cherry tomatoes, halved</li>
+        <li>Artichoke hearts</li>
+        <li>Cooked chickpeas</li>
+        <li>Lemon wedges</li>
+      </ul>
+      <img src="images/paellamaking.JPG" alt="Paella Making" class="making-photo">
+
+      <h3>Instructions</h3>
+      <ol>
+        <li><strong>Prep the Pan</strong>
+          <ul>
+            <li>Heat olive oil in a wide, shallow skillet over medium heat.</li>
+            <li>Add onion and garlic and cook 3–4 minutes until softened.</li>
+          </ul>
+        </li>
+
+        <li><strong>Build the Base</strong>
+          <ul>
+            <li>Stir in smoked paprika and turmeric (or saffron). Toast 30 seconds to release flavor.</li>
+            <li>Add rice and stir to coat evenly with oil and spices. Cook 1–2 minutes until edges look slightly translucent.</li>
+          </ul>
+        </li>
+
+        <li><strong>Add the Broth & Veggies</strong>
+          <ul>
+            <li>Pour in warm broth (start with 1½ cups) and spread rice evenly. Don’t stir again once it’s spread out.</li>
+            <li>Add your toppings—bell peppers, cherry tomatoes, artichokes, and chickpeas.</li>
+            <li>Season with salt and pepper.</li>
+          </ul>
+        </li>
+
+        <li><strong>Cook the Paella</strong>
+          <ul>
+            <li>Bring to a simmer, then reduce heat to medium-low.</li>
+            <li>Cook uncovered for 20–25 minutes, until rice is tender and liquid is mostly absorbed.</li>
+            <li>If the rice isn’t done but the pan is dry, add a splash of warm broth.</li>
+          </ul>
+        </li>
+
+        <li><strong>Optional: Make the Crispy Bottom</strong>
+          <ul>
+            <li>Increase heat to medium-high for 1–2 minutes to toast the bottom slightly. It should smell toasty, not burnt.</li>
+          </ul>
+        </li>
+
+        <li><strong>Finish & Serve</strong>
+          <ul>
+            <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
+            <li>Top with fresh parsley and serve with lemon wedges.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  </div>
+
+<footer>
+    <p>Zahra Baxi - DES 157A - Winter 2025</p>
+    <p><a href="../../index.html">back to home</a></p>
+</footer>
+
+
+</body>
+</html>
