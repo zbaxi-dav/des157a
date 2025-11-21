@@ -44,6 +44,12 @@ header {
     padding-top: 2rem;
 }
 
+.dish-title{
+    `display: block;
+    max-width: 80%;
+    margin: 0 auto 0 auto;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -64,20 +70,42 @@ header {
     object-fit: cover;
 }
 
+svg #dish1,
+svg #dish2,
+svg #dish3,
+svg #dish4,
+svg #dish5,
+svg #dish6,
+svg #dish7 {
+  transition: opacity 0.25s ease;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+svg #dish1:hover,
+svg #dish2:hover,
+svg #dish3:hover,
+svg #dish4:hover,
+svg #dish5:hover,
+svg #dish6:hover,
+svg #dish7:hover {
+  opacity: 1;
+}
+
 .container svg {
     pointer-events: none; 
 }
 
-.container svg circle,
-.container svg ellipse {
+.container svg ellipse,
+.container svg path {
     pointer-events: all;
     opacity: 0; 
     transform-origin: center;
 }
 
-.container svg circle:hover,
-.container svg ellipse:hover {
-    opacity: 0;
+.container svg ellipse:hover
+.container svg path:hover {
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -120,8 +148,8 @@ header {
 
 .music-button {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 70px;
+    left: 400px;
     background-color: var(--rose);
     color: var(--tamarind);
     border: none;
@@ -142,8 +170,8 @@ header {
 
 .info-icon {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 70px;
+    right: 400px;
     background-color: var(--rose);
     color: var(--tamarind);
     border-radius: 50%;

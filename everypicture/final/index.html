@@ -10,6 +10,7 @@
 <body>
     <header>
         <img src="images/gatherlogo.png" alt="Gather Logo" class="logo">
+        <p>click on the music icon on the left<br>then click on any dish on the table to begin exploring</p>
     </header>
 
 <main>
@@ -17,14 +18,35 @@
         <img src="images/gathertable.png" alt="Gathering Table" id="main-illustration">
 
         <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="757" cy="463" r="50" id="dish1" />
-            <circle cx="1071" cy="463" r="58" id="dish2" />
-            <ellipse cx="1206" cy="478" rx="36" ry="35" id="dish3" />
-            <ellipse cx="1070.5" cy="578.5" rx="29.5" ry="28.5" id="dish4" />
-            <ellipse cx="816" cy="573" rx="54" ry="52" id="dish5" />
-            <ellipse cx="949" cy="549.5" rx="50" ry="48.5" id="dish6" />
-            <circle cx="927" cy="418" r="72" id="dish7" />
+          <ellipse cx="756" cy="459.5" rx="50" ry="51.5" fill="white" fill-opacity="0.30" id="dish1"/>
+
+          <path d="M860 380.5C864 339.3 881.667 351 890 362C976 328.5 1002 408 981 449.5L997 460.5C997.4 467.7 986.5 476.5 981 480L967 467.5C866.5 514.5 852.5 416.5 872 391L860 380.5Z" fill="white" fill-opacity="0.30" id="dish2"/>
+
+          <ellipse cx="1073.5" cy="461" rx="53.5" ry="53" fill="white" fill-opacity="0.30" id="dish3"/>
+
+          <ellipse cx="1205.5" cy="480" rx="37.5" ry="40" fill="white" fill-opacity="0.30" id="dish4"/>
+
+          <g transform="rotate(45.4714 815.496 570.153)">
+            <ellipse cx="815.496" cy="570.153" rx="49.1694" ry="78.5731"
+             fill="white" fill-opacity="0.30" id="dish5"/>
+          </g>
+
+          <ellipse cx="948" cy="550" rx="49" ry="51" fill="white" fill-opacity="0.30" id="dish6"/>
+
+          <path d="M1048 552C1062.4 533.6 1082.67 544.333 1091 552C1088.2 560.4 1093.5 570.5 1096.5 574.5C1100.9 594.9 1080.67 602.667 1070 604C1042.8 605.2 1041.33 584.833 1044 574.5C1046 572.9 1048.5 565.5 1049.5 562C1047.9 559.2 1047.83 554.167 1048 552Z" fill="white" fill-opacity="0.30" id="dish7"/>
+
+          <!-- TO FIND OUT WHAT BOX WAS WHAT
+          <text x="756" y="459" fill="red" font-size="40">1</text>
+          <text x="890" y="380" fill="red" font-size="40">2</text>
+          <text x="1073" y="461" fill="red" font-size="40">3</text>
+          <text x="1205" y="480" fill="red" font-size="40">4</text>
+          <text x="815" y="570" fill="red" font-size="40">5</text>
+          <text x="948" y="550" fill="red" font-size="40">6</text>
+          <text x="1091" y="552" fill="red" font-size="40">7</text> -->
         </svg>
+
+
+        
     </div>
 </main>
 <!-- Music Button -->
@@ -55,8 +77,7 @@
       <div class="lightbox-content">
         <button class="close-lightbox">x</button>
         <img src="images/dish1.png" alt="Pumpkin Mole Enchiladas" class="dish-photo">
-
-        <h2>PUMPKIN MOLE ENCHILADAS</h2>
+        <img src = "images/Dish1Title.png " alt="Pumpkin Mole Enchiladas" class="dish-title">
         <h3>The Story</h3>
         <p>This dish started as a way to bring people together when the weather turned cool. I had some leftover pumpkin puree and started experimenting, blending it with the deep flavors of mole. You can even invite guests to be a part of the process, allowing them to fill and roll the tortillas themselves before drenching it in the rich mole sauce. It's a dish that is a perfect addition to inviting fall gatherings.</p>
 
@@ -135,14 +156,92 @@
       </div>
     </div>
 
+        <!-- VEGETARIAN PAELLA -->
+  <div class="lightbox hidden" id="lightbox2">
+    <div class="lightbox-content">
+      <button class="close-lightbox">x</button>
+      <img src="images/dish7.png" alt="Vegetarian Paella" class="dish-photo">
+      <img src = "images/Dish2Title.png " alt="Vegetarian Paella" class="dish-title">
+      <h3>The Story</h3>
+      <p>This dish is the one to make when you want something that looks impressive without taking over your whole night. It tastes as good as it looks and comes together easily, even when you’re juggling other sides. The first time I tried it was at a small dinner where I asked everyone to bring one ingredient to share, like chickpeas, peppers, or a handful of herbs. Now it’s my go-to when I want something that feels simple but still special. It scales up well, it’s fun to customize, and it always pulls people toward the table before it’s even finished cooking.</p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>¾ cup short-grain rice</li>
+        <li>1½–2 cups vegetable broth</li>
+        <li>1 tbsp olive oil</li>
+        <li>½ small onion, finely diced</li>
+        <li>2 cloves garlic, minced</li>
+        <li>½ tsp smoked paprika</li>
+        <li>¼ tsp turmeric (or saffron for a more traditional flavor)</li>
+        <li>Salt & pepper, to taste</li>
+      </ul>
+
+      <h3>Topping Suggestions</h3>
+      <ul>
+        <li>Red bell pepper, sliced into strips</li>
+        <li>Cherry tomatoes, halved</li>
+        <li>Artichoke hearts</li>
+        <li>Cooked chickpeas</li>
+        <li>Lemon wedges</li>
+      </ul>
+      <img src="images/paellamaking.JPG" alt="Paella Making" class="making-photo">
+
+      <h3>Instructions</h3>
+      <ol>
+        <li><strong>Prep the Pan</strong>
+          <ul>
+            <li>Heat olive oil in a wide, shallow skillet over medium heat.</li>
+            <li>Add onion and garlic and cook 3–4 minutes until softened.</li>
+          </ul>
+        </li>
+
+        <li><strong>Build the Base</strong>
+          <ul>
+            <li>Stir in smoked paprika and turmeric (or saffron). Toast 30 seconds to release flavor.</li>
+            <li>Add rice and stir to coat evenly with oil and spices. Cook 1–2 minutes until edges look slightly translucent.</li>
+          </ul>
+        </li>
+
+        <li><strong>Add the Broth & Veggies</strong>
+          <ul>
+            <li>Pour in warm broth (start with 1½ cups) and spread rice evenly. Don’t stir again once it’s spread out.</li>
+            <li>Add your toppings: bell peppers, cherry tomatoes, artichokes, and chickpeas.</li>
+            <li>Season with salt and pepper.</li>
+          </ul>
+        </li>
+
+        <li><strong>Cook the Paella</strong>
+          <ul>
+            <li>Bring to a simmer, then reduce heat to medium-low.</li>
+            <li>Cook uncovered for 20–25 minutes, until rice is tender and liquid is mostly absorbed.</li>
+            <li>If the rice isn’t done but the pan is dry, add a splash of warm broth.</li>
+          </ul>
+        </li>
+
+        <li><strong>Optional: Make the Crispy Bottom</strong>
+          <ul>
+            <li>Increase heat to medium-high for 1–2 minutes to toast the bottom slightly. It should smell toasty, not burnt.</li>
+          </ul>
+        </li>
+
+        <li><strong>Finish & Serve</strong>
+          <ul>
+            <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
+            <li>Top with fresh parsley and serve with lemon wedges.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+
 
     <!-- PIZZA -->
-    <div class="lightbox hidden" id="lightbox2">
+    <div class="lightbox hidden" id="lightbox3">
     <div class="lightbox-content">
       <button class="close-lightbox">x</button>
       <img src="images/dish2.png" alt="Pizza" class="dish-photo">
-
-      <h2>COMMUNITY PIZZA</h2>
+      <img src = "images/Dish3Title.png " alt="Community Pizza" class="dish-title">
       <h3>The Story</h3>
       <p>This pizza started on a night when everyone wanted something different. One person wanted pesto, another wanted mushrooms, and someone else just wanted WAY more cheese. We rolled out the dough together and filled the table with toppings like olives, peppers, and fresh herbs from the garden. It became a small tradition, a make-your-own night where everyone gets a slice that fits them.</p>
 
@@ -223,12 +322,11 @@
 
 
     <!-- BEINGET -->
-    <div class="lightbox hidden" id="lightbox3">
+    <div class="lightbox hidden" id="lightbox4">
       <div class="lightbox-content">
         <button class="close-lightbox">x</button>
         <img src="images/dish3.png" alt="Beignets" class="dish-photo">
-
-        <h2>Beignets</h2>
+        <img src = "images/Dish4Title.png " alt="Beignets" class="dish-title">
 
         <h3>The Story</h3>
         <p>I fell in love with beignets after a trip to New Orleans, but I didn’t learn how to make them until my roommate brought back a beignet mix box from Café du Monde. After that, I went all in. I’d make huge batches and pack them into little boxes to hand out to friends. They’re soft, warm, and completely covered in powdered sugar, which is exactly how they should be. I've outgrown the box mix and experimented repeatedly until perfected a recipe of my own.</p>
@@ -290,60 +388,12 @@
 
 
 
-    <!-- NAANI'S CHAI -->
-    <div class="lightbox hidden" id="lightbox4">
-    <div class="lightbox-content">
-      <button class="close-lightbox">x</button>
-      <img src="images/dish4.png" alt="Naani's Chai" class="dish-photo">
-
-      <h2>Naani's Chai</h2>
-      <h3>The Story</h3>
-      <p>This chai will always remind me of my Naani. She uses Society Tea leaves and never measures a thing and she knows when its the right time based on the color (no timers!). She’d let the water and sugar boil before adding milk, standing over the stove keeping a careful eye. I learned to make it the same way, and now I share it with friends on quiet mornings or long afternoons. It’s a small way to share her warmth with my new found family and communities.</p>
-
-      <h3>Ingredients</h3>
-      <ul>
-        <li>1 cup water</li>
-        <li>2 teaspoons loose Society Tea leaves (or any strong black tea)</li>
-        <li>2 teaspoons sugar (adjust to taste)</li>
-        <li>½ cup milk</li>
-        <li>Optional: a small piece of ginger or a pinch of cardamom</li>
-      </ul>
-      <img src="images/chaimaking.JPG" alt="Chai Making" class="making-photo">
-
-      <h3>Instructions</h3>
-      <ol>
-        <li><strong>Boil the Base</strong>
-          <ul>
-            <li>In a small pot, bring water to a boil.</li>
-            <li>Add sugar and tea leaves. Let it boil for about 2–3 minutes until the water darkens and the aroma deepens.</li>
-          </ul>
-        </li>
-
-        <li><strong>Add Milk</strong>
-          <ul>
-            <li>Pour in the milk and reduce the heat slightly.</li>
-            <li>Let the chai heat until it begins to rise, then turn off the stove before it spills over.</li>
-          </ul>
-        </li>
-
-        <li><strong>Strain & Serve</strong>
-          <ul>
-            <li>Strain the tea into cups and serve hot.</li>
-            <li>Enjoy it with biscuits, a good story, or quiet company.</li>
-          </ul>
-        </li>
-      </ol>
-    </div>
-  </div>
-
-
     <!-- CHAAT -->
     <div class="lightbox hidden" id="lightbox5">
     <div class="lightbox-content">
       <button class="close-lightbox">x</button>
       <img src="images/dish5.png" alt="Chaat" class="dish-photo">
-
-      <h2>CHAAT</h2>
+      <img src = "images/Dish5Title.png " alt="Chaat" class="dish-title">
       <h3>The Story</h3>
       <p>Chaat is one of those things that everyone makes differently. Some like it spicy, some like it sweet, and some just want all the toppings. I started making it because it’s fun to put out a bunch of ingredients and let everyone build their own. It’s an easy way to get people talking, trying new things, and sharing what they like. There’s always a little bit of a mess, but that’s part of the fun.</p>
 
@@ -402,8 +452,7 @@
     <div class="lightbox-content">
       <button class="close-lightbox">x</button>
       <img src="images/dish6.png" alt="Ravioli" class="dish-photo">
-
-      <h2>RAVIOLI</h2>
+      <img src = "images/Dish6Title.png " alt="Ravioli" class="dish-title">
       <h3>The Story</h3>
       <p>What looks like a fancy meal is actually suprising simple and fun to make. This recipe started as a way to use up bits of leftover fillings like ricotta from lasagna, roasted veggies from dinner, or even mashed pumpkin from fall cooking. Now it’s become something I make when I want to slow down and share food with others. Everyone can help roll the dough, shape the ravioli, or pick their own fillings. It’s simple, a little messy, and always feels like a small celebration.</p>
 
@@ -464,86 +513,51 @@
     </div>
   </div>
 
-
-    <!-- VEGETARIAN PAELLA -->
-  <div class="lightbox hidden" id="lightbox7">
+    <!-- NAANI'S CHAI -->
+    <div class="lightbox hidden" id="lightbox7">
     <div class="lightbox-content">
       <button class="close-lightbox">x</button>
-      <img src="images/dish7.png" alt="Vegetarian Paella" class="dish-photo">
-
-      <h2>VEGETARIAN PAELLA</h2>
+      <img src="images/dish4.png" alt="Naani's Chai" class="dish-photo">
+      <img src = "images/Dish7Title.png " alt="Naani's Chai" class="dish-title">
       <h3>The Story</h3>
-      <p>This dish is the one to make when you want something that looks impressive without taking over your whole night. It tastes as good as it looks and comes together easily, even when you’re juggling other sides. The first time I tried it was at a small dinner where I asked everyone to bring one ingredient to share, like chickpeas, peppers, or a handful of herbs. Now it’s my go-to when I want something that feels simple but still special. It scales up well, it’s fun to customize, and it always pulls people toward the table before it’s even finished cooking.</p>
+      <p>This chai will always remind me of my Naani. She uses Society Tea leaves and never measures a thing and she knows when its the right time based on the color (no timers!). She’d let the water and sugar boil before adding milk, standing over the stove keeping a careful eye. I learned to make it the same way, and now I share it with friends on quiet mornings or long afternoons. It’s a small way to share her warmth with my new found family and communities.</p>
 
       <h3>Ingredients</h3>
       <ul>
-        <li>¾ cup short-grain rice</li>
-        <li>1½–2 cups vegetable broth</li>
-        <li>1 tbsp olive oil</li>
-        <li>½ small onion, finely diced</li>
-        <li>2 cloves garlic, minced</li>
-        <li>½ tsp smoked paprika</li>
-        <li>¼ tsp turmeric (or saffron for a more traditional flavor)</li>
-        <li>Salt & pepper, to taste</li>
+        <li>1 cup water</li>
+        <li>2 teaspoons loose Society Tea leaves (or any strong black tea)</li>
+        <li>2 teaspoons sugar (adjust to taste)</li>
+        <li>½ cup milk</li>
+        <li>Optional: a small piece of ginger or a pinch of cardamom</li>
       </ul>
-
-      <h3>Topping Suggestions</h3>
-      <ul>
-        <li>Red bell pepper, sliced into strips</li>
-        <li>Cherry tomatoes, halved</li>
-        <li>Artichoke hearts</li>
-        <li>Cooked chickpeas</li>
-        <li>Lemon wedges</li>
-      </ul>
-      <img src="images/paellamaking.JPG" alt="Paella Making" class="making-photo">
+      <img src="images/chaimaking.JPG" alt="Chai Making" class="making-photo">
 
       <h3>Instructions</h3>
       <ol>
-        <li><strong>Prep the Pan</strong>
+        <li><strong>Boil the Base</strong>
           <ul>
-            <li>Heat olive oil in a wide, shallow skillet over medium heat.</li>
-            <li>Add onion and garlic and cook 3–4 minutes until softened.</li>
+            <li>In a small pot, bring water to a boil.</li>
+            <li>Add sugar and tea leaves. Let it boil for about 2–3 minutes until the water darkens and the aroma deepens.</li>
           </ul>
         </li>
 
-        <li><strong>Build the Base</strong>
+        <li><strong>Add Milk</strong>
           <ul>
-            <li>Stir in smoked paprika and turmeric (or saffron). Toast 30 seconds to release flavor.</li>
-            <li>Add rice and stir to coat evenly with oil and spices. Cook 1–2 minutes until edges look slightly translucent.</li>
+            <li>Pour in the milk and reduce the heat slightly.</li>
+            <li>Let the chai heat until it begins to rise, then turn off the stove before it spills over.</li>
           </ul>
         </li>
 
-        <li><strong>Add the Broth & Veggies</strong>
+        <li><strong>Strain & Serve</strong>
           <ul>
-            <li>Pour in warm broth (start with 1½ cups) and spread rice evenly. Don’t stir again once it’s spread out.</li>
-            <li>Add your toppings: bell peppers, cherry tomatoes, artichokes, and chickpeas.</li>
-            <li>Season with salt and pepper.</li>
-          </ul>
-        </li>
-
-        <li><strong>Cook the Paella</strong>
-          <ul>
-            <li>Bring to a simmer, then reduce heat to medium-low.</li>
-            <li>Cook uncovered for 20–25 minutes, until rice is tender and liquid is mostly absorbed.</li>
-            <li>If the rice isn’t done but the pan is dry, add a splash of warm broth.</li>
-          </ul>
-        </li>
-
-        <li><strong>Optional: Make the Crispy Bottom</strong>
-          <ul>
-            <li>Increase heat to medium-high for 1–2 minutes to toast the bottom slightly. It should smell toasty, not burnt.</li>
-          </ul>
-        </li>
-
-        <li><strong>Finish & Serve</strong>
-          <ul>
-            <li>Remove from heat, cover with a clean towel, and let rest 5 minutes.</li>
-            <li>Top with fresh parsley and serve with lemon wedges.</li>
+            <li>Strain the tea into cups and serve hot.</li>
+            <li>Enjoy it with biscuits, a good story, or quiet company.</li>
           </ul>
         </li>
       </ol>
     </div>
   </div>
+
 
   </div>
 
