@@ -1,0 +1,251 @@
+@import url('normalize.css');
+
+@import url('https://use.typekit.net/ksd1oac.css');
+
+body {
+  margin: 0;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color: #F0F0F0;
+  font-family: "p22-numismatic", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+
+/* FONTS */
+h1, h2 {
+    font-family: "p22-numismatic", "Arial", sans-serif;
+    color: #F0F0F0;
+    margin: 0 0 1rem;
+}
+
+
+p, button {
+    font-family: "eskapade-fraktur", serif;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* GAME CONTAINER */
+#game-container {
+    margin: auto;
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+
+
+/* CHARACTER SELECT SCREEN*/
+#character-select-screen {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#character-select-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.98);
+}
+
+#character-select {
+    margin-bottom: 1rem;
+}
+
+#character-select button {
+    font-family: "p22-numismatic", sans-serif;
+    background: none;
+    border: 2px solid #444;
+    color: #F0F0F0;
+    padding: 0.6rem 1.6rem;
+    margin: 0.4rem;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, transform 0.1s;
+    letter-spacing: 0.5px;
+}
+
+#character-select button:hover {
+    background: #181818;
+    border-color: #666;
+}
+
+#character-select button:active {
+    transform: scale(0.95);
+}
+
+
+
+
+/* CHARACTER SELECT*/
+#character-select {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.character-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0a0a0a;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #222;
+    width: 200px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-6px);
+    border-color: #666;
+}
+
+.char-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 0 10px #000;
+}
+
+.character-card .character-btn {
+        font-family: "p22-numismatic", sans-serif;
+        width: 100%;
+        background: none;
+        border: 2px solid #444;
+        color: #F0F0F0;
+        padding: 0.5rem 0;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        transition: background 0.2s, border-color 0.2s;
+}
+
+.character-card .character-btn:hover {
+    background: #181818;
+    border-color: #666;
+}
+
+
+
+/* BATTLE */
+#battle-area {
+    background: #0D0D0D;
+    border: 2px solid #222;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #000 inset;
+}
+
+
+
+/*  HEALTH */
+#health-bars {
+    margin-bottom: 1.2rem;
+}
+
+#health-bars p {
+    font-family: "eskapade-fraktur", serif;
+    margin: 0.4rem 0;
+    font-size: 1.2rem;
+}
+
+.hearts, #player-hp, #enemy-hp {
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    color: #ff4d4d;
+}
+
+
+
+
+/* ACTION BUTTONS */
+#player-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#player-actions .action-btn {
+    font-family: "p22-numismatic", sans-serif;
+    background: #111;
+    border: 2px solid #444;
+    padding: 0.7rem 1.8rem;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    transition: background 0.2s, border-color 0.2s, transform 0.1s, color 0.2s;
+}
+
+#player-actions .action-btn:hover {
+    background: #222;
+     border-color: #666;
+}
+
+#player-actions .action-btn:active {
+    transform: scale(0.95);
+}
+
+
+
+
+
+/* BATTLE RESULT LOG */
+#result {
+    font-family: "eskapade-fraktur", serif;
+    margin-top: 1.3rem;
+    padding: 1rem;
+    border: 2px solid #333;
+    background: #090909;
+    min-height: 140px;
+    max-height: 180px;
+    overflow-y: auto;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px #000;
+}
+
+/* animations go here eventually*/
+
+#result button {
+    font-family: "p22-numismatic", sans-serif;
+    background: #111;
+    border: 2px solid #444;
+    padding: 0.7rem 2rem;
+    color: #eee;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+#result button:hover {
+    background: #222;
+    border-color: #666;
+}
+
+
+
+/* FOOTER */
+footer {
+    font-family: "eskapade-fraktur", serif;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    color: #666;
+    border-top: 2px solid #1C1C1C;    
+}

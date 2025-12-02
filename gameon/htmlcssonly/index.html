@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisp</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ksd1oac.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="game-container">
+
+        <h1>~Wisp~</h1>
+
+        <div id="character-select">
+
+            <div class="character-card" data-name="Knight">
+                <img src="images/character1.gif" alt="Knight (will replace)" class="char-img">
+                <button class="character-btn" data-name="Knight">Knight</button>
+            </div>
+
+            <div class="character-card" data-name="Rogue">
+                <img src="images/character2.gif" alt="Rogue (will replace)" class="char-img">
+                <button class="character-btn" data-name="Rogue">Rogue</button>
+            </div>
+
+            <div class="character-card" data-name="Mage">
+                <img src="images/character3.gif" alt="Mage (will replace)" class="char-img">
+                <button class="character-btn" data-name="Mage">Mage</button>
+            </div>
+
+        </div>
+
+        <p id="selected-character">NO CHARACTER SELECTED.</p>
+
+        
+        <div id="battle-area" style="margin-top:20px;"> <!-- display:none;  -->
+
+            <h2>Battle</h2>
+
+            <div id="health-bars">
+                <p>Player HP: <span id="player-hp">❤︎❤︎❤︎❤︎❤︎</span></p>
+                <p>Enemy HP: <span id="enemy-hp">❤︎❤︎❤︎❤︎❤︎</span></p>
+            </div>
+
+            <div id="player-actions">
+                <button class="action-btn" data-move="attack">ATTACK</button>
+                <button class="action-btn" data-move="defend">DEFEND</button>
+            </div>
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+    <footer>
+        <p>made with <3 by zahra with html, css, (js) and some sparkle dust ✦₊⁺</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
