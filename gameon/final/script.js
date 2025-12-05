@@ -22,8 +22,8 @@ const musicToggle = document.querySelector("#music-toggle");
 
 // MUSIC
 let music = [
-    new Audio("audio/title.mp3"),   // index 0: title music
-    new Audio("audio/battle.mp3"),  // index 1: battle music
+    new Audio("audio/title.mp3"),
+    new Audio("audio/battle.mp3"),
 ];
 let musicIndex = 0;
 music.forEach(m => { m.loop = true; });
@@ -149,7 +149,6 @@ rollBtn.onclick = () => {
 function endGame(){
     showScreen(scrResult);
 
-    // stop current music
     music[musicIndex].pause();
 
     if(playerHP > 0){

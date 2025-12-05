@@ -10,38 +10,36 @@
 </head>
 
 <body>
-<header id="game-title">~ Wisp ~</header>
+<header id="game-title">
+    ~ Wisp ~
+</header>
 <button id="music-toggle">♫</button>
 
 <div id="game-container">
 
-<!-- SCREEN 1: CHOOSE YOUR CHARACTER!-->
 <section id="screen-select" class="screen active">
     <div id="rules">
         <h3>Rules</h3>
         <p>Roll the dice to strike! Your enemy strikes too.</p>
         <p>⚄ = Heal +1 HP · ⚁ = Shield (half damage)</p>
     </div>
-
     <p>Select your wanderer</p>
-
     <div id="character-select">
         <div class="character-card">
-            <img src="images/knight.gif" class="char-img">
+            <img src="images/knight.gif" class="char-img" alt="the knight">
             <button class="character-btn" data-name="The Knight">Knight</button>
         </div>
         <div class="character-card">
-            <img src="images/rogue.gif" class="char-img">
+            <img src="images/rogue.gif" class="char-img" alt="the rogue">
             <button class="character-btn" data-name="The Rogue">Rogue</button>
         </div>
         <div class="character-card">
-            <img src="images/mage.gif" class="char-img">
+            <img src="images/mage.gif" class="char-img" alt="the mage">
             <button class="character-btn" data-name="The Mage">Mage</button>
         </div>
     </div>
 </section>
 
-<!-- SCREEN 2: BATTLE-->
 <section id="screen-battle" class="screen">
     <button id="info-btn">𝐢</button>
     <div id="rules-popup" class="hidden">
@@ -50,27 +48,24 @@
         <p>⚄ = Heal +1 HP · ⚁ = Shield (half damage)</p>
         <button id="close-rules">Close</button>
     </div>
-
     <div id="battle-layout">
         <div id="enemy-side">
-            <img src="images/enemy.gif" id="enemy-img">
+            <img src="images/enemy.gif" id="enemy-img" alt="the wisp">
             <p id="enemy-name">The Wisp</p>
             <p id="enemy-hp"></p>
         </div>
         <div id="player-side">
-            <img id="player-img">
+            <img id="player-img" src="images/placeholder.gif" alt="player character">
             <p id="player-name"></p>
             <p id="player-hp"></p>
         </div>
     </div>
-
     <div id="actions"></div>
     <div id="log"></div>
 </section>
 
-<!-- SCREEN 3: RESULT -->
 <section id="screen-result" class="screen">
-    <h2 id="result-text"></h2>
+    <h2 id="result-text">Result goes here</h2>
     <button id="play-again">Play Again</button>
 </section>
 
