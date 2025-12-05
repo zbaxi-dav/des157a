@@ -12,6 +12,19 @@ body {
   font-family: "p22-numismatic", sans-serif;
   letter-spacing: 0.5px;
 }
+a:link, a:visited {
+    color: red;          
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: red;
+}
+
 
 #rules {
     margin-bottom: 1.5rem;
@@ -25,6 +38,36 @@ body {
 #log {
     margin-top: 1.5rem;
 }
+
+#info-btn {
+    position:absolute;
+    top:10px; right:10px;
+    font-size:1.4rem;
+    background:#111;
+    border:2px solid #444;
+    color:#eee;
+    border-radius:50%;
+    width:35px; height:35px;
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+}
+
+#rules-popup {
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    background:#0a0a0a;
+    padding:1rem;
+    border:2px solid #333;
+    width:80%;
+    max-width:350px;
+    text-align:center;
+    z-index:10;
+    border-radius:6px;
+}
+
+.hidden { display:none; }
+
 
 
 /* FONTS */

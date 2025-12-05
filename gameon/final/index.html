@@ -10,65 +10,76 @@
 </head>
 
 <body>
-    <header id="game-title">
-        ~ Wisp ~
-    </header>
+<header id="game-title">~ Wisp ~</header>
+<button id="music-toggle">♫</button>
 
-    <button id="music-toggle">♫</button>
+<div id="game-container">
 
-    <div id="game-container">
-    <!-- SCREEN 1: CHARACTER SELECT -->
-    <section id="screen-select" class="screen active">
-        <p>Select your wanderer</p>
-        <div id="character-select">
-            <div class="character-card">
-                <img src="images/knight.gif" class="char-img">
-                <button class="character-btn" data-name="The Knight">Knight</button>
-            </div>
-            <div class="character-card">
-                <img src="images/rogue.gif" class="char-img">
-                <button class="character-btn" data-name="The Rogue">Rogue</button>
-            </div>
-            <div class="character-card">
-                <img src="images/mage.gif" class="char-img">
-                <button class="character-btn" data-name="The Mage">Mage</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- SCREEN 2: BATTLE -->
-    <section id="screen-battle" class="screen">
-        <div id="rules">
-            <h3>Rules</h3>
-            <p>Roll the dice to strike! Your enemy will strike too.</p>
-            <p>Rolling ⚄ (5) heals +1 HP    |    Rolling ⚁ (2) shields, halving incoming damage</p>    
-        </div>
-        <div id="battle-layout">
-            <div id="enemy-side">
-                <img src="images/enemy.gif" id="enemy-img">
-                <p id="enemy-name">Stray Wisp</p>
-                <p id="enemy-hp"></p>
-            </div>
-            <div id="player-side">
-                <img id="player-img">
-                <p id="player-name"></p>
-                <p id="player-hp"></p>
-            </div>
-        </div>
-        <div id="actions"></div>
-        <div id="log"></div>
-    </section>
-
-    <!-- SCREEN 3: RESULT -->
-    <section id="screen-result" class="screen">
-        <h2 id="result-text"></h2>
-        <button id="play-again">Play Again</button>
-    </section>
-
-    <footer>
-        <p>a game by zahra - made with html/css/js and some sparkle dust ✦₊⁺</p>
-    </footer>
-
+<!-- SCREEN 1: CHARACTER SELECT WITH RULES MOVED HERE -->
+<section id="screen-select" class="screen active">
+    <div id="rules">
+        <h3>Rules</h3>
+        <p>Roll the dice to strike! Your enemy strikes too.</p>
+        <p>⚄ = Heal +1 HP · ⚁ = Shield (half damage)</p>
     </div>
+
+    <p>Select your wanderer</p>
+
+    <div id="character-select">
+        <div class="character-card">
+            <img src="images/knight.gif" class="char-img">
+            <button class="character-btn" data-name="The Knight">Knight</button>
+        </div>
+        <div class="character-card">
+            <img src="images/rogue.gif" class="char-img">
+            <button class="character-btn" data-name="The Rogue">Rogue</button>
+        </div>
+        <div class="character-card">
+            <img src="images/mage.gif" class="char-img">
+            <button class="character-btn" data-name="The Mage">Mage</button>
+        </div>
+    </div>
+</section>
+
+<!-- SCREEN 2: BATTLE — RULES REMOVED, INFO ICON ADDED -->
+<section id="screen-battle" class="screen">
+    <!-- info button that opens rules overlay -->
+    <button id="info-btn">𝐢</button>
+    <div id="rules-popup" class="hidden">
+        <h3>Rules</h3>
+        <p>Roll the dice to strike! Your enemy strikes too.</p>
+        <p>⚄ = Heal +1 HP · ⚁ = Shield (half damage)</p>
+        <button id="close-rules">Close</button>
+    </div>
+
+    <div id="battle-layout">
+        <div id="enemy-side">
+            <img src="images/enemy.gif" id="enemy-img">
+            <p id="enemy-name">Stray Wisp</p>
+            <p id="enemy-hp"></p>
+        </div>
+        <div id="player-side">
+            <img id="player-img">
+            <p id="player-name"></p>
+            <p id="player-hp"></p>
+        </div>
+    </div>
+
+    <div id="actions"></div>
+    <div id="log"></div>
+</section>
+
+<!-- SCREEN 3: RESULT -->
+<section id="screen-result" class="screen">
+    <h2 id="result-text"></h2>
+    <button id="play-again">Play Again</button>
+</section>
+
+<footer>
+    <p>a game by zahra - made with html/css/js and some sparkle dust ✦₊⁺</p>
+    <p>music from this game is royalty free from: <a href="https://pixabay.com/service/license-summary/">Pixabay</a></p>
+</footer>
+
+</div>
 </body>
 </html>
