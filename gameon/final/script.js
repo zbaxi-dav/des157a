@@ -26,23 +26,21 @@ let music = [
     new Audio("audio/battle.mp3"),  // index 1: battle music
 ];
 let musicIndex = 0;
-
-// loop all music
 music.forEach(m => { m.loop = true; });
 
-// WIN / LOSE SOUNDS
+// WIN & LOSE SOUNDS
 const winSound = new Audio("audio/win.mp3");
 const loseSound = new Audio("audio/lose.mp3");
 
 // DICE ROLL SOUND
 const diceRollSound = new Audio("audio/diceroll.mp3");
 
-// INTRO MUSIC AUTOPLAY (after first interaction)
+// INTRO MUSIC AUTOPLAY (had to find online had no clue how to do to "override" chrome block)
 let introStarted = false;
 function startIntroMusic() {
     if(!introStarted){
         introStarted = true;
-        music[0].play(); // title music
+        music[0].play();
         window.removeEventListener("click", startIntroMusic);
         window.removeEventListener("mousemove", startIntroMusic);
         window.removeEventListener("keydown", startIntroMusic);
@@ -52,7 +50,7 @@ window.addEventListener("click", startIntroMusic);
 window.addEventListener("mousemove", startIntroMusic);
 window.addEventListener("keydown", startIntroMusic);
 
-// toggle music button
+// OFF & ON MUSIC
 musicToggle.onclick = () => {
     let track = music[musicIndex];
     track.paused ? track.play() : track.pause();
@@ -69,7 +67,18 @@ if(infoBtn){
 
 // GAME VARIABLES
 let playerHP = 10, enemyHP = 10;
-function hearts(n){ return "❤︎".repeat(n); }
+
+// HEART ANIMATION FUNCTION 
+function hearts(n){
+    let container = document.createElement('span');
+    for(let i=0;i<n;i++){
+        let span = document.createElement('span');
+        span.textContent = '❤︎';
+        span.classList.add('heart-animate'); 
+        container.appendChild(span);
+    }
+    return container.innerHTML;
+}
 
 function showScreen(s){
     scrSelect.classList.remove("active");
@@ -86,13 +95,12 @@ charBtns.forEach(btn => {
 
         pName.textContent = raw;
         pImg.src = "images/" + file + ".gif";
-
-        switchMusic(1); // play battle music automatically
+        switchMusic(1); 
         showScreen(scrBattle);
 
         playerHP = enemyHP = 10;
-        pHP_UI.textContent = hearts(10);
-        eHP_UI.textContent = hearts(10);
+        pHP_UI.innerHTML = hearts(10);
+        eHP_UI.innerHTML = hearts(10);
 
         log.innerHTML = "<p>The battle begins...</p>";
     };
@@ -107,7 +115,10 @@ function rollDie(){ return Math.floor(Math.random() * 6) + 1; }
 rollBtn.onclick = () => {
     if(playerHP <= 0 || enemyHP <= 0) return;
 
-    // play dice roll sound
+    if(rollBtn.textContent === "Roll Dice"){
+        rollBtn.textContent = "Roll Again";
+    }
+
     diceRollSound.currentTime = 0;
     diceRollSound.play();
 
@@ -124,8 +135,8 @@ rollBtn.onclick = () => {
 
     pDef = eDef = false;
 
-    pHP_UI.textContent = hearts(Math.max(playerHP,0));
-    eHP_UI.textContent = hearts(Math.max(enemyHP,0));
+    pHP_UI.innerHTML = hearts(Math.max(playerHP,0));
+    eHP_UI.innerHTML = hearts(Math.max(enemyHP,0));
 
     const dice = ["⚀","⚁","⚂","⚃","⚄","⚅"];
     log.innerHTML += `<p>You rolled <b>${dice[p-1]}</b> | Enemy <b>${dice[e-1]}</b></p>`;
@@ -138,7 +149,7 @@ rollBtn.onclick = () => {
 function endGame(){
     showScreen(scrResult);
 
-    // switch to result music (pause any previous music)
+    // stop current music
     music[musicIndex].pause();
 
     if(playerHP > 0){
@@ -150,6 +161,7 @@ function endGame(){
     }
 }
 
+// play again
 playAgain.onclick = () => location.reload();
 
 // MUSIC SWITCH HELPER

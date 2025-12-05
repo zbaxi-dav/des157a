@@ -12,20 +12,20 @@ body {
   font-family: "p22-numismatic", sans-serif;
   letter-spacing: 0.5px;
 }
+
+/* pixabay link */
 a:link, a:visited {
     color: red;          
     text-decoration: none;
 }
-
 a:hover {
     color: darkred;
 }
-
 a:active {
     color: red;
 }
 
-
+/* MARGIN RULES */
 #rules {
     margin-bottom: 1.5rem;
 }
@@ -39,6 +39,8 @@ a:active {
     margin-top: 1.5rem;
 }
 
+
+/* INFO BUTTON */
 #info-btn {
     position:absolute;
     top:10px; right:10px;
@@ -52,6 +54,7 @@ a:active {
     cursor:pointer;
 }
 
+/* POP UP THE RULES */
 #rules-popup {
     position:absolute;
     top:50%; left:50%;
@@ -66,7 +69,9 @@ a:active {
     border-radius:6px;
 }
 
-.hidden { display:none; }
+.hidden { 
+    display:none; 
+}
 
 
 
@@ -96,9 +101,13 @@ p, button {
     padding-bottom: 2rem;
 }
 
-/* SCREEN SWITCHING */
-.screen { display: none; }
-.screen.active { display: block; }
+/* "PAGE" SWITCHING */
+.screen { 
+    display: none; 
+}
+.screen.active { 
+    display: block; 
+}
 
 /* MUSIC BUTTON */
 #music-toggle {
@@ -157,7 +166,9 @@ p, button {
     flex-direction:column;
     align-items:center;
 }
-.character-card:hover { transform: translateY(-6px); border-color:#666; }
+.character-card:hover { 
+    transform: translateY(-6px); 
+    border-color:#666; }
 
 .char-img {
     width:180px;height:180px;
@@ -177,7 +188,9 @@ p, button {
     letter-spacing:.5px;
     transition:.2s;
 }
-.character-btn:hover { background:#181818; border-color:#666; }
+.character-btn:hover { 
+    background:#181818; 
+    border-color:#666; }
 
 /* BATTLE */
 #battle-layout {
@@ -186,7 +199,10 @@ p, button {
     align-items:center;
     margin:2rem 0;
 }
-#player-side,#enemy-side { width:45%;text-align:center; }
+#player-side,#enemy-side { 
+    width:45%;
+    text-align:center; 
+}
 #player-img,#enemy-img {
     width:200px;height:200px;
     object-fit:contain;
@@ -253,6 +269,21 @@ p, button {
 
 
 /* battle log */
+
+/* didnt end up looking good lol */
+/* @keyframes heartPop {
+  0%   { transform: scale(1); color: #ff4d4d; }
+  50%  { transform: scale(1.5); color: #ff9999; }
+  100% { transform: scale(1); color: #ff4d4d; }
+}
+
+.heart-animate {
+  display: inline-block;
+  animation: heartPop 0.3s ease forwards;
+}
+ */
+
+
 #log {
     margin-top:1.3rem;
     padding:1rem;
