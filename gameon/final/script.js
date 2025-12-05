@@ -1,6 +1,6 @@
 (function(){
 "use strict";
-console.log("using JS");
+console.log("reading JS");
 
 // SCREENS
 const scrSelect = document.querySelector("#screen-select");
